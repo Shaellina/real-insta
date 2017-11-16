@@ -1,0 +1,6 @@
+<h1>Detail</h1>
+<%= @post.image_url %><br>
+<%= @post.story %>
+
+<%= link_to "[edit]", edit_post_path(@post.id) %>
+<%= link_to "[delete]", post_path(@post.id), method:'delete' %>

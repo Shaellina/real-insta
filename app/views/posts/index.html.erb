@@ -1,0 +1,7 @@
+<h1>Instagram</h1></h1>
+<% @posts.each do |p| %>
+  <img src="<%= p.image_url %>" style="height:200px;">
+  <%= link_to "[보기]", "/posts/#{p.id}" %><br>
+<% end %>
+
+<%= link_to "New Post", new_post_path %>
